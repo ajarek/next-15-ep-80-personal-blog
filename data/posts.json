@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "date": "2025-02-27",
+    "title": "Sensacja w Ekstraklasie! Lider pokonany",
+    "content": "W ostatniej kolejce doszło do ogromnej niespodzianki! Faworyt rozgrywek przegrał na własnym stadionie 1:3, co mocno namieszało w tabeli.",
+    "comments": [
+      {
+        "user": "Kibic123",
+        "comment": "Niesamowite! Kto by się spodziewał takiego wyniku?"
+      },
+      {
+        "user": "AnalizaFutbolu",
+        "comment": "Trener kompletnie nie trafił z taktyką. Zasłużona porażka."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2025-02-26",
+    "title": "Najlepsi strzelcy sezonu 2024/25",
+    "content": "Sezon w pełni, a walka o koronę króla strzelców robi się coraz ciekawsza. Na czele klasyfikacji znajduje się napastnik drużyny z Poznania, który zdobył już 14 bramek.",
+    "comments": [
+      {
+        "user": "MirekGol",
+        "comment": "Ciekawe, czy utrzyma formę do końca sezonu!"
+      },
+      {
+        "user": "FanLecha",
+        "comment": "Nasz napastnik jest nie do zatrzymania! 🏆"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2025-02-25",
+    "title": "VAR znów w centrum uwagi",
+    "content": "Kolejna kontrowersyjna decyzja VAR w meczu Ekstraklasy! Czy technologia pomaga, czy tylko wprowadza jeszcze więcej zamieszania?",
+    "comments": [
+      {
+        "user": "ObiektywnyKibic",
+        "comment": "VAR miał pomagać, ale czasem mam wrażenie, że jest gorzej niż bez niego..."
+      },
+      {
+        "user": "SędziaAnonim",
+        "comment": "Nie zawsze jest perfekcyjnie, ale to wciąż krok w dobrą stronę."
+      }
+    ]
+  }
+]
