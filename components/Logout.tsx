@@ -10,6 +10,7 @@ import {
 import { KeyRound, UserCheck } from 'lucide-react'
 
 import 'next-auth'
+import Image from 'next/image'
 
 const Logout = async ({ session }: { session: Session | null }) => {
   return (
@@ -46,10 +47,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger className='text-2xl'>
-                  <UserCheck
-                    size={32}
-                    strokeWidth={1}
-                  />
+                <Image src={session.user?.image ||''} width={40} height={40} alt='user' className='rounded-full'/>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className='capitalize'>
@@ -67,10 +65,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger className='text-2xl'>
-                  <UserCheck
-                    size={32}
-                    strokeWidth={1}
-                  />
+                <Image src={session.user?.image ||''} width={40} height={40} alt='user' className='rounded-full'/>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className='capitalize'>

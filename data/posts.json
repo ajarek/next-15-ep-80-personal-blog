@@ -2,8 +2,9 @@
   {
     "id": 1,
     "date": "2025-02-27",
-    "title": "Sensacja w Ekstraklasie! Lider pokonany",
-    "content": "W ostatniej kolejce doszło do ogromnej niespodzianki! Faworyt rozgrywek przegrał na własnym stadionie 1:3, co mocno namieszało w tabeli.",
+    "title": "Sensacja w Ekstraklasie! Legia pokonana!",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
+    "content": "W ostatniej kolejce doszło do ogromnej niespodzianki! Faworyt rozgrywek przegrał z Radomiakiem 3:1, co mocno namieszało w tabeli.",
     "comments": [
       {
         "user": "Kibic123",
@@ -19,6 +20,7 @@
     "id": 2,
     "date": "2025-02-26",
     "title": "Najlepsi strzelcy sezonu 2024/25",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
     "content": "Sezon w pełni, a walka o koronę króla strzelców robi się coraz ciekawsza. Na czele klasyfikacji znajduje się napastnik drużyny z Poznania, który zdobył już 14 bramek.",
     "comments": [
       {
@@ -35,7 +37,25 @@
     "id": 3,
     "date": "2025-02-25",
     "title": "VAR znów w centrum uwagi",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
     "content": "Kolejna kontrowersyjna decyzja VAR w meczu Ekstraklasy! Czy technologia pomaga, czy tylko wprowadza jeszcze więcej zamieszania?",
+    "comments": [
+      {
+        "user": "ObiektywnyKibic",
+        "comment": "VAR miał pomagać, ale czasem mam wrażenie, że jest gorzej niż bez niego..."
+      },
+      {
+        "user": "SędziaAnonim",
+        "comment": "Nie zawsze jest perfekcyjnie, ale to wciąż krok w dobrą stronę."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "date": "2025-02-28",
+    "title": "Pasjonujący mecz Arka - Wisła",
+    "image":"https://bi.im-g.pl/im/85/43/1e/z31732613Q,Arka---Wisla.jpg",
+    "content": "Na zapleczu Ekstraklasy doszło do ciekawego meczu Arka Gdynia - Wisła Kraków. Bramka wyrównująca mecz na 2:2 padła w 95 minucie.",
     "comments": [
       {
         "user": "ObiektywnyKibic",

@@ -18,7 +18,7 @@ const Home = () => {
         <MySocial/>
       </div>
         <div className='flex flex-col items-start justify-start gap-4 '>
-          <h2 className='text-xl underline decoration-4 decoration-blue-500' >Ostatnie artykuły</h2>
+          <h2 className='text-xl underline decoration-4 decoration-blue-500' >Ostatnie artykuły:</h2>
           <PostList/>
         </div>
     </div>
