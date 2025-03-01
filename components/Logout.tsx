@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { KeyRound, UserCheck } from 'lucide-react'
+import { KeyRound } from 'lucide-react'
 
 import 'next-auth'
 import Image from 'next/image'

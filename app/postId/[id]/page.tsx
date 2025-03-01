@@ -11,7 +11,7 @@ const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
   const session = use (auth())
 
   return (
-    <div className='min-h-[calc(100vh-64px)] grid grid-cols-2 gap-4 px-24 place-items-center'>
+    <div className='min-h-[calc(100vh-64px)] grid grid-cols-2 max-lg:grid-cols-1 gap-4 px-24 max-sm:px-4 place-items-center'>
       <div className='relative w-[400px] h-[300px] flex  items-center justify-center rounded-lg overflow-hidden shadow-lg'>
         <Image
           src={post?.image || ''}
