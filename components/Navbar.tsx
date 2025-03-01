@@ -12,7 +12,7 @@ const Navbar = async () => {
       <div className='flex items-center  '>
       <Link
         href='/'
-        className='flex items-center  hover:text-gray-500 transition duration-200 space-x-2'
+        className='flex items-center  hover:text-gray-400 transition duration-200 space-x-2'
       >
         <Image
           src= '/images/user_me.jpg'
@@ -29,7 +29,7 @@ const Navbar = async () => {
         
         <Link
           href='/contact'
-          className={` text-xl max-sm:text-lg  hover:text-gray-500 transition duration-200 `}
+          className={` text-xl max-sm:text-lg  hover:text-gray-400 transition duration-200 `}
         >
           Kontakt
         </Link>

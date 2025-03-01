@@ -1,10 +1,14 @@
 import React, { use } from 'react'
 import posts from '@/data/posts.json'
 import Image from 'next/image'
+import AddComment from '@/components/AddComment'
+import { auth } from '@/app/api/auth/auth'
+import { Button } from '@/components/ui/button'
 
 const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = use(params)
   const post = posts.find((post) => post.id === +id)
+  const session = use (auth())
 
   return (
     <div className='min-h-[calc(100vh-64px)] grid grid-cols-2 gap-4 px-24 place-items-center'>
@@ -33,6 +37,10 @@ const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
             </div>
           ))}
         </div>
+        {session?
+      < AddComment name={session.user?.name || ''} postId={+id} />:
+      <Button disabled  className='py-2 px-4 self-end '>Zaloguj i Dodaj Komentarz</Button>
+        }
       </div>
     </div>
   )
