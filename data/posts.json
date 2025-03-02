@@ -3,68 +3,35 @@
     "id": 1,
     "date": "2025-02-27",
     "title": "Sensacja w Ekstraklasie! Legia pokonana!",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
-    "content": "W ostatniej kolejce doszło do ogromnej niespodzianki! Faworyt rozgrywek przegrał z Radomiakiem 3:1, co mocno namieszało w tabeli.",
-    "comments": [
-      {
-        "user": "Kibic123",
-        "comment": "Niesamowite! Kto by się spodziewał takiego wyniku?"
-      },
-      {
-        "user": "AnalizaFutbolu",
-        "comment": "Trener kompletnie nie trafił z taktyką. Zasłużona porażka."
-      }
-    ]
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
+    "content": "W ostatniej kolejce doszło do ogromnej niespodzianki! Faworyt rozgrywek przegrał z Radomiakiem 3:1, co mocno namieszało w tabeli."
   },
   {
     "id": 2,
     "date": "2025-02-26",
     "title": "Najlepsi strzelcy sezonu 2024/25",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
-    "content": "Sezon w pełni, a walka o koronę króla strzelców robi się coraz ciekawsza. Na czele klasyfikacji znajduje się napastnik drużyny z Poznania, który zdobył już 14 bramek.",
-    "comments": [
-      {
-        "user": "MirekGol",
-        "comment": "Ciekawe, czy utrzyma formę do końca sezonu!"
-      },
-      {
-        "user": "FanLecha",
-        "comment": "Nasz napastnik jest nie do zatrzymania! 🏆"
-      }
-    ]
+    "image": "https://kkslech.com/zdjecia/lechpuszcza41/2G5A7131.JPG",
+    "content": "Sezon w pełni, a walka o koronę króla strzelców robi się coraz ciekawsza. Na czele klasyfikacji znajduje się napastnik drużyny z Poznania, który zdobył już 14 bramek."
   },
   {
     "id": 3,
     "date": "2025-02-25",
     "title": "VAR znów w centrum uwagi",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxvKiTwE4GWVeNa7qyKGH08V8eUGtA2TX5Q&s",
-    "content": "Kolejna kontrowersyjna decyzja VAR w meczu Ekstraklasy! Czy technologia pomaga, czy tylko wprowadza jeszcze więcej zamieszania?",
-    "comments": [
-      {
-        "user": "ObiektywnyKibic",
-        "comment": "VAR miał pomagać, ale czasem mam wrażenie, że jest gorzej niż bez niego..."
-      },
-      {
-        "user": "SędziaAnonim",
-        "comment": "Nie zawsze jest perfekcyjnie, ale to wciąż krok w dobrą stronę."
-      }
-    ]
+    "image": "https://static.polityka.pl/_resource/res/path/ca/f8/caf8618a-5f15-4409-b648-495a9feaf0b4_f1400x900",
+    "content": "Kolejna kontrowersyjna decyzja VAR w meczu Ekstraklasy! Czy technologia pomaga, czy tylko wprowadza jeszcze więcej zamieszania?"
   },
   {
     "id": 4,
     "date": "2025-02-28",
     "title": "Pasjonujący mecz Arka - Wisła",
-    "image":"https://bi.im-g.pl/im/85/43/1e/z31732613Q,Arka---Wisla.jpg",
-    "content": "Na zapleczu Ekstraklasy doszło do ciekawego meczu Arka Gdynia - Wisła Kraków. Bramka wyrównująca mecz na 2:2 padła w 95 minucie.",
-    "comments": [
-      {
-        "user": "ObiektywnyKibic",
-        "comment": "VAR miał pomagać, ale czasem mam wrażenie, że jest gorzej niż bez niego..."
-      },
-      {
-        "user": "SędziaAnonim",
-        "comment": "Nie zawsze jest perfekcyjnie, ale to wciąż krok w dobrą stronę."
-      }
-    ]
+    "image": "https://bi.im-g.pl/im/85/43/1e/z31732613Q,Arka---Wisla.jpg",
+    "content": "Na zapleczu Ekstraklasy doszło do ciekawego meczu Arka Gdynia - Wisła Kraków. Bramka wyrównująca mecz na 2:2 padła w 95 minucie."
+  },
+  {
+    "id": 5,
+    "date": "2025-03-02",
+    "title": "Ciekawy i zacięty mecz Jagiellonia - GKS",
+    "image": "https://s8.tvp.pl/images2/8/e/2/uid_8e2edc219b6c4fcf887d8008083959ce_width_1200_play_0_pos_0_gs_0_height_678_pilkarze-jagiellonii-bialystok-fot-pap.jpg",
+    "content": "W niedzielę (02.03) Jagiellonia Białystok pokonała GKS Katowice 1:0 w domowym meczu 23. kolejki PKO BP Ekstraklasy. Bramkę na wagę trzech punktów dla Żółto-Czerwonych zdobył kapitan naszego zespołu, Taras Romanczuk (36').."
   }
 ]

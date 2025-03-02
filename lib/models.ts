@@ -10,9 +10,11 @@ export type User = {
 }
 export type UserWithoutId = Omit<User, '_id'>
 
-export type Course = {
-  id: string
-  email: string
+export type Comment = {
+  
+  name: string
+  content: string
+  postId: number
 }
 
 const userSchema = new mongoose.Schema(
@@ -26,15 +28,16 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
-const courseSchema = new mongoose.Schema(
+const commentSchema = new mongoose.Schema(
   {
-    id: { type: String, required: true, min: 1, max: 20 },
-    email: { type: String, required: true, min: 3, max: 50 },
+  
+    name: { type: String, required: true, min: 3, max: 50 },
+    content: { type: String, required: true, min: 3, max: 500 },
+    postId: { type: Number, required: true },
   },
   { timestamps: true }
 )
 
 export const User = mongoose.models?.User || mongoose.model('User', userSchema)
 
-export const Course =
-  mongoose.models?.Course || mongoose.model('Course', courseSchema)
+export const Comment =  mongoose.models?.Comment || mongoose.model('Comment', commentSchema)

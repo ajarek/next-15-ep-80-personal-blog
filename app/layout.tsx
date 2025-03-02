@@ -29,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      <div className='max-w-7xl mx-auto w-full'>
          <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Navbar/>
         </ThemeProvider>
         {children}
+        </div>
       </body>
     </html>
   );

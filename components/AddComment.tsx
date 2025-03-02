@@ -4,12 +4,10 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { useState } from 'react'
+import type {Comment as CommentType} from '@/lib/models'
+import { addComment } from '@/lib/action'
 
-type CommentType = {
-  name: string
-  content: string
-  postId: number
-}
+
 
 const AddComment = ({ postId, name }: { postId: number; name: string }) => {
   const [add,setAdd]=useState(false)
@@ -24,7 +22,7 @@ const AddComment = ({ postId, name }: { postId: number; name: string }) => {
             postId: postId,
             content: formData.get('content') as string,
           }
-          console.log(commentData)
+        await addComment(commentData)
           setAdd(false)
         }}
         className='flex flex-col space-y-4'

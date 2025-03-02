@@ -1,11 +1,11 @@
 'use server'
 
 import connectToDb from './connectToDb'
-import { User, UserWithoutId, Course } from './models'
+import { User, UserWithoutId, Comment } from './models'
 import { revalidatePath } from 'next/cache'
 import bcrypt from 'bcryptjs'
 import { redirect } from 'next/navigation'
-import type { Course as CourseType } from './models'
+import type { Comment as CommentType } from './models'
 
 export const addUser = async (formData: UserWithoutId) => {
   const { username, email, password, img, isAdmin } = formData
@@ -69,11 +69,11 @@ export const updateUser = async (formData: FormData) => {
   }
 }
 
-export const addCourse = async (data: CourseType) => {
-  console.log(data)
+export const addComment = async (data: CommentType) => {
+  
   try {
     await connectToDb()
-    const newNote = new Course(data)
+    const newNote = new Comment(data)
     await newNote.save()
     revalidatePath('/')
     console.log('Note saved:', newNote)
@@ -82,23 +82,23 @@ export const addCourse = async (data: CourseType) => {
   }
 }
 
-export const getAllCourses = async () => {
+export const getAllComments = async () => {
   try {
     await connectToDb()
-    const course = await Course.find({})
-    return course
+    const comments = await Comment.find({})
+    return comments
   } catch (err) {
     console.log(err)
   }
 }
 
-export const deleteCourseId = async (formData: FormData) => {
+export const deleteCommentId = async (formData: FormData) => {
   const id = formData.get('_id')
-  console.log(id)
+  
   try {
     await connectToDb()
-    await Course.findOneAndDelete({ _id: id })
-    revalidatePath('/courses')
+    await Comment.findOneAndDelete({ _id: id })
+    revalidatePath(`/`)
     return { message: `Deleted record ${id}` }
   } catch (err) {
     return { message: 'Failed to delete record' + err }
