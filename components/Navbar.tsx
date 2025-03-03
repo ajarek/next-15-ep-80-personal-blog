@@ -10,7 +10,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { Contact } from 'lucide-react'
+import { Contact, FolderCog } from 'lucide-react'
+
 const Navbar = async () => {
   const session = await auth()
   return (
@@ -32,7 +33,21 @@ const Navbar = async () => {
       </Link>
       </div>
       <div className='flex items-center space-x-8 max-sm-:space-x-2'>
-        
+        {session?.user?.email==='ajarek@wp.pl'&& <Link href='/dashboard'  className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200'>
+        <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                {' '}
+                <FolderCog
+                  size={32}
+                  strokeWidth={1}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Panel</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider></Link>}
       <Link
           href='/contact'
           className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '

@@ -93,12 +93,12 @@ export const getAllComments = async () => {
 }
 
 export const deleteCommentId = async (formData: FormData) => {
-  const id = formData.get('_id')
+  const id = formData.get('id')
   
   try {
     await connectToDb()
     await Comment.findOneAndDelete({ _id: id })
-    revalidatePath(`/`)
+    revalidatePath(`/dashboard`)
     return { message: `Deleted record ${id}` }
   } catch (err) {
     return { message: 'Failed to delete record' + err }
