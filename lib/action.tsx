@@ -1,11 +1,11 @@
 'use server'
 
 import connectToDb from './connectToDb'
-import { User, UserWithoutId, Comment } from './models'
+import { User, UserWithoutId, Comment, Article } from './models'
 import { revalidatePath } from 'next/cache'
 import bcrypt from 'bcryptjs'
 import { redirect } from 'next/navigation'
-import type { Comment as CommentType } from './models'
+import type { Comment as CommentType , Article as ArticleType } from './models'
 
 export const addUser = async (formData: UserWithoutId) => {
   const { username, email, password, img, isAdmin } = formData
@@ -102,5 +102,28 @@ export const deleteCommentId = async (formData: FormData) => {
     return { message: `Deleted record ${id}` }
   } catch (err) {
     return { message: 'Failed to delete record' + err }
+  }
+}
+
+export const addArticle = async (data: ArticleType) => {
+  
+  try {
+    await connectToDb()
+    const newNote = new Article(data)
+    await newNote.save()
+    revalidatePath('/dashboard')
+    console.log('Article saved:', newNote)
+  } catch (err) {
+    console.error('Failed to save Article:', err)
+  }
+}
+
+export const getAllArticles = async () => {
+  try {
+    await connectToDb()
+    const articles = await Article.find({})
+    return articles
+  } catch (err) {
+    console.log(err)
   }
 }

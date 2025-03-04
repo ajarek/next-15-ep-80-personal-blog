@@ -6,10 +6,11 @@ import { Textarea } from '@/components/ui/textarea'
 import { useState } from 'react'
 import type {Comment as CommentType} from '@/lib/models'
 import { addComment } from '@/lib/action'
+import type {Comment as TypeComment} from '@/lib/models'
 
 
 
-const AddComment = ({ postId, name }: { postId: number; name: string }) => {
+const AddComment = ({ postId, name }: TypeComment) => {
   const [add,setAdd]=useState(false)
   return (
     <div className='w-full p-4 border rounded-lg shadow-md flex flex-col'>

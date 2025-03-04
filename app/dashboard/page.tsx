@@ -1,8 +1,12 @@
+
+
 import React, {use} from 'react'
 import { auth } from '@/app/api/auth/auth'
 import { redirect } from 'next/navigation'
 import {getAllComments} from '@/lib/action'
 import ButtonDelete from '@/components/ButtonDelete'
+import AddArticle from '@/components/AddArticle'
+
 
 const Dashboard =  () => {
   const session = use(auth())
@@ -11,7 +15,7 @@ const Dashboard =  () => {
   }
   const commentsAll = use(getAllComments())
   return (
-    <div className='flex flex-col px-24'>
+    <div className='flex flex-col px-24 pb-8'>
       {commentsAll?.map((comment, index) => (
             <div
               key={comment._id}
@@ -25,6 +29,9 @@ const Dashboard =  () => {
             </div>
 
           ))}
+
+      <AddArticle/>
+
     </div>
   )
 }
