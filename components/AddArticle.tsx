@@ -20,7 +20,7 @@ const AddArticle = () => {
         await addArticle(commentData)
           
         }}
-        className='flex flex-col space-y-4'
+        className='flex flex-col space-y-4 border-2 p-4 rounded-xl'
       >
        
         <div>
@@ -28,7 +28,7 @@ const AddArticle = () => {
             htmlFor='title'
             className='block mb-2 font-medium'
           >
-            Nazwa
+            Tytuł
           </Label>
           <Input
             type='text'
@@ -43,7 +43,7 @@ const AddArticle = () => {
             htmlFor='image'
             className='block mb-2 font-medium'
           >
-            Treść komentarza
+            Scieżka do foto
           </Label>
           <Input
             name='image'

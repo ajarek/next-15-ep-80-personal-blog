@@ -127,3 +127,16 @@ export const getAllArticles = async () => {
     console.log(err)
   }
 }
+
+export const deleteArticleId = async (formData: FormData) => {
+  const id = formData.get('id')
+  
+  try {
+    await connectToDb()
+    await Article.findOneAndDelete({ _id: id })
+    revalidatePath(`/dashboard`)
+    return { message: `Deleted record ${id}` }
+  } catch (err) {
+    return { message: 'Failed to delete record' + err }
+  }
+}
