@@ -29,7 +29,7 @@ const Navbar = async () => {
           className='w-10 h-10  object-cover rounded-full'
         />
        
-      <h1 className='text-xl '>EkstraFutbol ⚽ </h1>
+      <h1 className='text-xl max-lg:hidden '>EkstraFutbol ⚽ </h1>
       </Link>
       </div>
       <div className='flex items-center space-x-8 max-sm-:space-x-2'>

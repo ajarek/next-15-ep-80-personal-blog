@@ -20,7 +20,7 @@ const AddArticle = () => {
         await addArticle(commentData)
           
         }}
-        className='flex flex-col space-y-4 border-2 p-4 rounded-xl'
+        className='w-full flex flex-col space-y-4 border-2 p-4 rounded-xl '
       >
        
         <div>
