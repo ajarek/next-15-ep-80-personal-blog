@@ -68,7 +68,9 @@ export default function ContactForm() {
           <Mail className='mr-2 h-6 w-6' /> Kontakt
         </h1>
         {isSubmitted ? (
-          <div className={`flex flex-col items-center justify-center space-y-4`}>
+          <div
+            className={`flex flex-col items-center justify-center space-y-4`}
+          >
             <Check className='h-12 w-12 text-green-500' />
             <p className='text-lg text-center font-semibold capitalize'>
               {name} Dziękujemy za wiadomość!
@@ -142,7 +144,7 @@ export default function ContactForm() {
               )}
             </div>
             <div className='flex justify-end'>
-              <Button type='submit'  >Wyślij 📩</Button>
+              <Button type='submit'>Wyślij 📩</Button>
             </div>
           </form>
         )}

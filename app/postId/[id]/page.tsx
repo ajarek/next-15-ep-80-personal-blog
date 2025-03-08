@@ -3,18 +3,16 @@ import Image from 'next/image'
 import AddComment from '@/components/AddComment'
 import { auth } from '@/app/api/auth/auth'
 import { Button } from '@/components/ui/button'
-import {getAllComments, getAllArticles} from '@/lib/action'
-
-
+import { getAllComments, getAllArticles } from '@/lib/action'
 
 const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
   const posts = use(getAllArticles())
   const { id } = use(params)
   const post = posts?.find((post) => post._id == id)
-  const session = use (auth())
+  const session = use(auth())
   const commentsAll = use(getAllComments())
-  const comments =commentsAll?.filter(comment => comment.postId ==id)
- 
+  const comments = commentsAll?.filter((comment) => comment.postId == id)
+
   return (
     <div className='min-h-[calc(100vh-64px)] grid grid-cols-2 max-lg:grid-cols-1 gap-4 px-24 max-sm:px-4 place-items-center pb-4'>
       <div className='relative w-[400px] h-[300px] flex  items-center justify-center rounded-lg overflow-hidden shadow-lg'>
@@ -30,7 +28,11 @@ const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
       <div className='flex flex-col items-start justify-start gap-4'>
         <h1 className='text-xl'>{post?.title}</h1>
         <p>{post?.content}</p>
-        <p>{post.createdAt?.toLocaleString('pl-PL', {timeZone: 'Europe/Warsaw'})}</p>
+        <p>
+          {post.createdAt?.toLocaleString('pl-PL', {
+            timeZone: 'Europe/Warsaw',
+          })}
+        </p>
         <div>
           {comments?.map((comment, index) => (
             <div
@@ -42,10 +44,19 @@ const PostId = ({ params }: { params: Promise<{ id: string }> }) => {
             </div>
           ))}
         </div>
-        {session?
-      < AddComment name={session.user?.name || ''} postId={id} />:
-      <Button disabled  className='py-2 px-4 self-end '>Zaloguj i Dodaj Komentarz</Button>
-        }
+        {session ? (
+          <AddComment
+            name={session.user?.name || ''}
+            postId={id}
+          />
+        ) : (
+          <Button
+            disabled
+            className='py-2 px-4 self-end '
+          >
+            Zaloguj i Dodaj Komentarz
+          </Button>
+        )}
       </div>
     </div>
   )

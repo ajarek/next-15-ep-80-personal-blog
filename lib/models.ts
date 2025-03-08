@@ -13,8 +13,7 @@ export type UserWithoutId = Omit<User, '_id'>
 export type Comment = {
   name: string
   content?: string
-  postId:  string
- 
+  postId: string
 }
 export type Article = {
   title: string

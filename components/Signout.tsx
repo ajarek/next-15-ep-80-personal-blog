@@ -17,7 +17,7 @@ const Signout = async () => {
       <div className='flex justify-center p-2'>
         <Link href='/'>
           <Image
-             src={userImage? userImage:  '/images/user.png'}
+            src={userImage ? userImage : '/images/user.png'}
             alt='logo'
             width={60}
             height={60}

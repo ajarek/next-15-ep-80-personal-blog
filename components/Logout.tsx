@@ -47,7 +47,13 @@ const Logout = async ({ session }: { session: Session | null }) => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger className='text-2xl'>
-                <Image src={session.user?.image ||''} width={40} height={40} alt='user' className='rounded-full'/>
+                  <Image
+                    src={session.user?.image || ''}
+                    width={40}
+                    height={40}
+                    alt='user'
+                    className='rounded-full'
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className='capitalize'>
@@ -65,7 +71,13 @@ const Logout = async ({ session }: { session: Session | null }) => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger className='text-2xl'>
-                <Image src={session.user?.image ||''} width={40} height={40} alt='user' className='rounded-full'/>
+                  <Image
+                    src={session.user?.image || ''}
+                    width={40}
+                    height={40}
+                    alt='user'
+                    className='rounded-full'
+                  />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className='capitalize'>

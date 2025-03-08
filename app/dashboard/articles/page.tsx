@@ -2,7 +2,7 @@ import React, { use } from 'react'
 import { getAllArticles } from '@/lib/action'
 import ButtonDelete from '@/components/ButtonDelete'
 import Image from 'next/image'
-import { deleteArticleId } from "@/lib/action"
+import { deleteArticleId } from '@/lib/action'
 
 const Articles = () => {
   const articlesAll = use(getAllArticles())
@@ -34,7 +34,10 @@ const Articles = () => {
             })}
           </p>
           <div className='self-end'>
-            <ButtonDelete id={article._id.toString()} deleteElementId={deleteArticleId} />
+            <ButtonDelete
+              id={article._id.toString()}
+              deleteElementId={deleteArticleId}
+            />
           </div>
         </div>
       ))}

@@ -5,7 +5,7 @@ import { User, UserWithoutId, Comment, Article } from './models'
 import { revalidatePath } from 'next/cache'
 import bcrypt from 'bcryptjs'
 import { redirect } from 'next/navigation'
-import type { Comment as CommentType , Article as ArticleType } from './models'
+import type { Comment as CommentType, Article as ArticleType } from './models'
 
 export const addUser = async (formData: UserWithoutId) => {
   const { username, email, password, img, isAdmin } = formData
@@ -70,7 +70,6 @@ export const updateUser = async (formData: FormData) => {
 }
 
 export const addComment = async (data: CommentType) => {
-  
   try {
     await connectToDb()
     const newNote = new Comment(data)
@@ -94,7 +93,7 @@ export const getAllComments = async () => {
 
 export const deleteCommentId = async (formData: FormData) => {
   const id = formData.get('id')
-  
+
   try {
     await connectToDb()
     await Comment.findOneAndDelete({ _id: id })
@@ -106,7 +105,6 @@ export const deleteCommentId = async (formData: FormData) => {
 }
 
 export const addArticle = async (data: ArticleType) => {
-  
   try {
     await connectToDb()
     const newNote = new Article(data)
@@ -130,7 +128,7 @@ export const getAllArticles = async () => {
 
 export const deleteArticleId = async (formData: FormData) => {
   const id = formData.get('id')
-  
+
   try {
     await connectToDb()
     await Article.findOneAndDelete({ _id: id })

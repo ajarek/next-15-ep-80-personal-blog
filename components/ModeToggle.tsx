@@ -14,9 +14,15 @@ export function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         {theme === 'light' ? (
-          <FaMoon  size={24} onClick={() => setTheme('dark')} />
+          <FaMoon
+            size={24}
+            onClick={() => setTheme('dark')}
+          />
         ) : (
-          <FaRegSun  size={24} onClick={() => setTheme('light')} />
+          <FaRegSun
+            size={24}
+            onClick={() => setTheme('light')}
+          />
         )}
       </DropdownMenuTrigger>
     </DropdownMenu>
