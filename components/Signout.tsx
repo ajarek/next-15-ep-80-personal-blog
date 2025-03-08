@@ -15,7 +15,7 @@ const Signout = async () => {
       className='p-4  flex flex-col items-center rounded-lg border-2 shadow-xl gap-4 min-w-[300px]'
     >
       <div className='flex justify-center p-2'>
-        <Link href='/'>
+        <Link href='/' aria-label='Logo'>
           <Image
             src={userImage ? userImage : '/images/user.png'}
             alt='logo'
@@ -29,6 +29,7 @@ const Signout = async () => {
       <Button
         type='submit'
         className='w-full bg-red-500 text-white hover:bg-red-600'
+        aria-label='Wyloguj się'
       >
         Wyloguj się
       </Button>

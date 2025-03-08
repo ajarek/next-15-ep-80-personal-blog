@@ -16,6 +16,7 @@ const PostList = async () => {
             href={`/postId/${post._id?.toString()}`}
             key={post._id?.toString()}
             className='w-full flex flex-col items-start justify-start gap-4 border-2 border-gray-400 p-2 shadow-lg rounded-lg'
+            aria-label='Artykuł'
           >
             <h2 className='text-xl'>{post.title}</h2>
             <p>{post.content}</p>

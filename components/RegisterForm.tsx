@@ -41,7 +41,7 @@ const RegisterForm = () => {
   return (
     <div className='p-4  flex flex-col items-center rounded-lg border-2 shadow-xl gap-4 min-w-[300px]'>
       <div className='flex justify-center p-2'>
-        <Link href='/'>
+        <Link href='/' aria-label='Logo'>
           <Image
             src='/images/logo.png'
             alt='logo'
@@ -91,12 +91,14 @@ const RegisterForm = () => {
         <Button
           className='w-full bg-[#0E78F9] text-white hover:bg-[#0E78F9]/90'
           type='submit'
+          aria-label='Zarejestruj się'
         >
           Zarejestruj się
         </Button>
         <Link
           href='/login'
           className='text-black'
+          aria-label='Masz już konto? Zaloguj się'
         >
           Masz już konto? <b className='text-[#0E78F9]'>Zaloguj się</b>
         </Link>

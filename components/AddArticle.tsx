@@ -41,12 +41,13 @@ const AddArticle = () => {
           htmlFor='image'
           className='block mb-2 font-medium'
         >
-          Scieżka do foto
+          Ścieżka do foto
         </Label>
         <Input
           name='image'
           required
           placeholder='Foto adres'
+
         />
       </div>
       <div>
@@ -65,6 +66,7 @@ const AddArticle = () => {
       <Button
         type='submit'
         className='py-2 px-4 self-end '
+        aria-label='Dodaj Artykuł'
       >
         Dodaj Artykuł
       </Button>

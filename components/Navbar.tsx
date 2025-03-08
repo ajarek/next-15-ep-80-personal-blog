@@ -20,6 +20,7 @@ const Navbar = async () => {
         <Link
           href='/'
           className='flex items-center  hover:text-gray-400 transition duration-200 space-x-2'
+          aria-label='EkstraFutbol'
         >
           <Image
             src='/images/user_me.jpg'
@@ -37,6 +38,7 @@ const Navbar = async () => {
           <Link
             href='/dashboard'
             className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200'
+            aria-label='Panel'
           >
             <TooltipProvider>
               <Tooltip>
@@ -45,6 +47,7 @@ const Navbar = async () => {
                   <FolderCog
                     size={32}
                     strokeWidth={1}
+                    aria-label='Panel'
                   />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -57,6 +60,7 @@ const Navbar = async () => {
         <Link
           href='/contact'
           className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '
+          aria-label='Kontakt'
         >
           <TooltipProvider>
             <Tooltip>
@@ -65,6 +69,7 @@ const Navbar = async () => {
                 <Contact
                   size={32}
                   strokeWidth={1}
+                  aria-label='Kontakt'
                 />
               </TooltipTrigger>
               <TooltipContent>

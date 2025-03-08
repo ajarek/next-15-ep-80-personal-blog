@@ -21,6 +21,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
         <Link
           href='/login'
           className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '
+          aria-label='Logowanie'
         >
           <TooltipProvider>
             <Tooltip>
@@ -29,6 +30,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
                 <KeyRound
                   size={32}
                   strokeWidth={1}
+                  aria-label='Logowanie'
                 />
               </TooltipTrigger>
               <TooltipContent>
@@ -43,6 +45,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
           <Link
             href='/my-courses'
             className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 lg:hidden'
+            aria-label='Moje kursy'
           >
             <TooltipProvider>
               <Tooltip>
@@ -67,6 +70,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
           <Link
             href='/'
             className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 max-lg:hidden'
+            aria-label='Moje kursy'
           >
             <TooltipProvider>
               <Tooltip>

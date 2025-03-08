@@ -61,6 +61,7 @@ const AddComment = ({ postId, name }: TypeComment) => {
           <Button
             type='submit'
             className='py-2 px-4 self-end '
+            aria-label='Dodaj Komentarz'
           >
             Dodaj Komentarz
           </Button>
@@ -69,6 +70,7 @@ const AddComment = ({ postId, name }: TypeComment) => {
         <Button
           onClick={() => setAdd(true)}
           className='py-2 px-4 self-end '
+          aria-label='Dodaj Komentarz'
         >
           Dodaj Komentarz
         </Button>

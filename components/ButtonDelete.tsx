@@ -25,6 +25,8 @@ const ButtonDelete = ({
       <Button
         size={'icon'}
         className='w-full bg-transparent hover:border-2 transition-all delay-200 '
+        type='submit'
+        aria-label='Usuń'
       >
         ❌
       </Button>

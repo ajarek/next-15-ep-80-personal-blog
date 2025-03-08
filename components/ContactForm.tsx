@@ -78,6 +78,7 @@ export default function ContactForm() {
             <Button
               onClick={handleReset}
               className='mt-4 hover:bg-primary hover:scale-110 transition-all duration-1000 ease-in-out'
+              aria-label='Wyślij kolejną wiadomość'
             >
               Wyślij kolejną wiadomość
             </Button>
@@ -144,7 +145,12 @@ export default function ContactForm() {
               )}
             </div>
             <div className='flex justify-end'>
-              <Button type='submit'>Wyślij 📩</Button>
+              <Button
+                type='submit'
+                aria-label='Wyślij'
+              >
+                Wyślij 📩
+              </Button>
             </div>
           </form>
         )}

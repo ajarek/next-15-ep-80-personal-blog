@@ -30,6 +30,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
             <Link
               href='/dashboard'
               className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '
+              aria-label='Dodaj Artykuł'
             >
               <TooltipProvider>
                 <Tooltip>
@@ -38,6 +39,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
                     <CirclePlus
                       size={32}
                       strokeWidth={1}
+                      aria-label='Dodaj Artykuł'
                     />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -49,6 +51,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
             <Link
               href='/dashboard/articles'
               className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '
+              aria-label='Artykuły'
             >
               <TooltipProvider>
                 <Tooltip>
@@ -57,6 +60,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
                     <Newspaper
                       size={32}
                       strokeWidth={1}
+                      aria-label='Artykuły'
                     />
                   </TooltipTrigger>
                   <TooltipContent>
@@ -68,6 +72,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
             <Link
               href='/dashboard/comments'
               className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-blue-500  transition-all delay-200 '
+              aria-label='Komentarze'
             >
               <TooltipProvider>
                 <Tooltip>
@@ -76,6 +81,7 @@ const DashboardLayout = async ({ children }: DashboardLayoutProps) => {
                     <MessageCircle
                       size={32}
                       strokeWidth={1}
+                      aria-label='Komentarze'
                     />
                   </TooltipTrigger>
                   <TooltipContent>
