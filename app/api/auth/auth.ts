@@ -22,20 +22,33 @@ export const {
         await connectToDb()
         try {
           const user = await User.findOne({ username: credentials.username })
-          if (user) {
-            const isPasswordCorrect = await bcrypt.compare(
-              credentials.password,
-              user.password
-            )
-            if (isPasswordCorrect) {
-              return user
-            }
+          
+          if (!user) {
+            // User not found
+            throw new Error("Invalid username or password")
           }
+          
+          const isPasswordCorrect = await bcrypt.compare(
+            credentials.password,
+            user.password
+          )
+          
+          if (!isPasswordCorrect) {
+            // Password doesn't match
+            throw new Error("Invalid username or password")
+          }
+          
+          return user
+          
         } catch (err: any) {
-          throw new Error(err)
+          // Log the actual error internally if needed
+          console.error(err)
+          
+          // Return a generic error message to the client
+          throw new Error("Invalid username or password")
         }
-      },
-    }),
+      }
+    })
   ],
 
   callbacks: {

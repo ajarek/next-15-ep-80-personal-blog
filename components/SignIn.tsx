@@ -4,13 +4,26 @@ import { Input } from './ui/input'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
+import { redirect } from 'next/navigation'
 
 export function SignIn() {
   return (
     <form
       action={async (formData) => {
         'use server'
-        await signIn('credentials', formData)
+        const username = formData.get('username') as string
+        const password = formData.get('password') as string
+        try {
+          await signIn('credentials', {
+            redirect: false,
+            username,
+            password,
+          })
+        } catch (error) {
+          console.error(error)
+        } finally {
+          redirect('/')
+        }
       }}
       className='p-4  flex flex-col items-center rounded-lg border-2 shadow-xl gap-4 min-w-[300px]'
     >
